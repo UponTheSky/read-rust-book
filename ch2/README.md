@@ -76,6 +76,24 @@
   - this trait must be in scope for us to use those methods
 
 ## Comparing the Guess to the Secret Number
+- `Ordering`: enum
+- `match`: kind of `switch...case`
+  - *arm*: each different case
+  - no fall through
 
+- type system: integer default is `i32`
 
+- shadowing variables is allowed in Rust
+- parsing the text values:
+  - `trim()`: getting rid of whitespaces
+  - `parse()`: converting a string variable into another type
+  - since `parse` could cause possible errors, we have `expect` here as well
 
+## Allowing Multiple Guesses with Looping
+- `loop`: an infinite loop
+
+### Quitting After a Correct Guess
+- `break`
+
+### Handling Invalid Input
+- again, `match` pattern
